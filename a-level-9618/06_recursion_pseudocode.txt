@@ -1,0 +1,11 @@
+// Recursion: factorial and binary search (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/computational-thinking-problem-solving/
+
+FUNCTION Factorial(N : INTEGER) RETURNS INTEGER
+   IF N <= 1
+      THEN
+         RETURN 1
+      ELSE
+         RETURN N * Factorial(N - 1)
+   ENDIF
+ENDFUNCTION

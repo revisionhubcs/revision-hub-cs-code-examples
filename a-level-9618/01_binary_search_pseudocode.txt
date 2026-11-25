@@ -1,0 +1,23 @@
+// Binary search (Cambridge-style pseudocode)
+// List[1:100] holds 100 items sorted into ascending order
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/algorithm-design-9618/
+
+FUNCTION BinarySearch(Target : INTEGER) RETURNS INTEGER
+   Low <- 1
+   High <- 100
+   WHILE Low <= High
+      Mid <- (Low + High) DIV 2
+      IF List[Mid] = Target
+         THEN
+            RETURN Mid
+      ELSE
+         IF List[Mid] < Target
+            THEN
+               Low <- Mid + 1
+            ELSE
+               High <- Mid - 1
+         ENDIF
+      ENDIF
+   ENDWHILE
+   RETURN -1
+ENDFUNCTION

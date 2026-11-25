@@ -1,0 +1,8 @@
+// String handling (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/programming/
+
+Word <- "Computer"
+OUTPUT LENGTH(Word)              // 8
+OUTPUT SUBSTRING(Word, 4, 3)     // "put"
+OUTPUT UCASE(Word)               // "COMPUTER"
+OUTPUT LCASE(Word)               // "computer"

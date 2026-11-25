@@ -1,0 +1,18 @@
+// Bubble sort (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/algorithm-design-and-problem-solving/
+
+DECLARE List : ARRAY[1:4] OF INTEGER
+Top <- 4
+REPEAT
+   Swap <- FALSE
+   FOR Index <- 1 TO Top - 1
+      IF List[Index] > List[Index + 1]
+         THEN
+            Temp <- List[Index]
+            List[Index] <- List[Index + 1]
+            List[Index + 1] <- Temp
+            Swap <- TRUE
+      ENDIF
+   NEXT Index
+   Top <- Top - 1
+UNTIL Swap = FALSE OR Top = 1

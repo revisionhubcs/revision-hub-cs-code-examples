@@ -1,0 +1,9 @@
+// Linked list with a free list (array based) (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/data-types-and-structures/
+
+// Output every item in a linked list
+CurrentPointer <- StartPointer
+WHILE CurrentPointer <> NullPointer
+   OUTPUT List[CurrentPointer].Data
+   CurrentPointer <- List[CurrentPointer].Pointer
+ENDWHILE

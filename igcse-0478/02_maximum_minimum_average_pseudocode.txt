@@ -1,0 +1,20 @@
+// Maximum, minimum and average (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/algorithm-design-and-problem-solving/
+
+DECLARE Marks : ARRAY[1:5] OF INTEGER
+Highest <- Marks[1]
+Lowest <- Marks[1]
+Total <- 0
+FOR Index <- 1 TO 5
+   IF Marks[Index] > Highest
+      THEN
+         Highest <- Marks[Index]
+   ENDIF
+   IF Marks[Index] < Lowest
+      THEN
+         Lowest <- Marks[Index]
+   ENDIF
+   Total <- Total + Marks[Index]
+NEXT Index
+Average <- Total / 5
+OUTPUT Highest, Lowest, Average

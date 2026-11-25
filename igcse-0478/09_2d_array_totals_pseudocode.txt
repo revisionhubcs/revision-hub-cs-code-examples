@@ -1,0 +1,11 @@
+// 2D arrays: total for each row (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/programming/
+
+DECLARE Scores : ARRAY[1:30, 1:4] OF INTEGER
+FOR Student <- 1 TO 30
+   StudentTotal <- 0
+   FOR Test <- 1 TO 4
+      StudentTotal <- StudentTotal + Scores[Student, Test]
+   NEXT Test
+   OUTPUT "Student ", Student, " total: ", StudentTotal
+NEXT Student

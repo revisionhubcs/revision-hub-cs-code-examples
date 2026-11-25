@@ -1,0 +1,11 @@
+// File handling: write and read a text file (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/programming/
+
+OPENFILE "names.txt" FOR WRITE
+WRITEFILE "names.txt", Name
+CLOSEFILE "names.txt"
+
+OPENFILE "names.txt" FOR READ
+READFILE "names.txt", Line
+OUTPUT Line
+CLOSEFILE "names.txt"

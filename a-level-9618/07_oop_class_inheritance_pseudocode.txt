@@ -1,0 +1,18 @@
+// OOP: classes, encapsulation and inheritance (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/further-programming/
+
+CLASS Account
+   PRIVATE Owner : STRING
+   PRIVATE Balance : REAL
+   PUBLIC PROCEDURE NEW(GivenOwner : STRING)
+      Owner <- GivenOwner
+      Balance <- 0
+   ENDPROCEDURE
+   PUBLIC FUNCTION GetBalance() RETURNS REAL
+      RETURN Balance
+   ENDFUNCTION
+ENDCLASS
+
+CLASS SavingsAccount INHERITS Account
+   PRIVATE Rate : REAL
+ENDCLASS

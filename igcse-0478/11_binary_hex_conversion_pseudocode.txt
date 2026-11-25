@@ -1,0 +1,11 @@
+// Binary, denary and hexadecimal conversion (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/data-representation/
+
+// Denary to 8-bit binary using repeated division by 2
+INPUT Number
+Binary <- ""
+FOR Count <- 1 TO 8
+   Binary <- NUM_TO_STR(Number MOD 2) & Binary
+   Number <- Number DIV 2
+NEXT Count
+OUTPUT Binary

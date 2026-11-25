@@ -1,0 +1,26 @@
+// Stack (LIFO) using an array (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/data-types-and-structures/
+
+DECLARE Stack : ARRAY[1:10] OF STRING
+DECLARE TopPointer : INTEGER
+TopPointer <- 0
+
+PROCEDURE Push(Item : STRING)
+   IF TopPointer = 10
+      THEN
+         OUTPUT "Stack full"
+      ELSE
+         TopPointer <- TopPointer + 1
+         Stack[TopPointer] <- Item
+   ENDIF
+ENDPROCEDURE
+
+FUNCTION Pop() RETURNS STRING
+   IF TopPointer = 0
+      THEN
+         RETURN ""
+      ELSE
+         TopPointer <- TopPointer - 1
+         RETURN Stack[TopPointer + 1]
+   ENDIF
+ENDFUNCTION

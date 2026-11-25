@@ -1,0 +1,7 @@
+// DIV, MOD, ROUND and RANDOM (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/programming/
+
+OUTPUT 17 DIV 5                  // 3
+OUTPUT 17 MOD 5                  // 2
+OUTPUT ROUND(7.456, 1)           // 7.5
+Dice <- ROUND(RANDOM() * 5, 0) + 1   // whole number from 1 to 6 (RANDOM() returns a value from 0 to 1)

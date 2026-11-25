@@ -1,0 +1,15 @@
+// Procedures, functions and parameters (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/programming/
+
+PROCEDURE ShowLine(Length : INTEGER)
+   FOR Count <- 1 TO Length
+      OUTPUT "-"
+   NEXT Count
+ENDPROCEDURE
+
+FUNCTION AreaOfRectangle(Width : INTEGER, Height : INTEGER) RETURNS INTEGER
+   RETURN Width * Height
+ENDFUNCTION
+
+CALL ShowLine(10)
+OUTPUT AreaOfRectangle(4, 5)

@@ -1,0 +1,10 @@
+// Passing parameters by value and by reference (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/programming-9618/
+
+PROCEDURE AddOne(BYVAL Number : INTEGER)
+   Number <- Number + 1          // the original variable does NOT change
+ENDPROCEDURE
+
+PROCEDURE AddOneRef(BYREF Number : INTEGER)
+   Number <- Number + 1          // the original variable DOES change
+ENDPROCEDURE

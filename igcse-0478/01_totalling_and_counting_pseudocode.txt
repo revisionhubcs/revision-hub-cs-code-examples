@@ -1,0 +1,15 @@
+// Totalling and counting (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/algorithm-design-and-problem-solving/
+
+Total <- 0
+Count <- 0
+FOR Index <- 1 TO 5
+   INPUT Num
+   Total <- Total + Num
+   IF Num > 10
+      THEN
+         Count <- Count + 1
+   ENDIF
+NEXT Index
+OUTPUT "Total: ", Total
+OUTPUT "Above 10: ", Count

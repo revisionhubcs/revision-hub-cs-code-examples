@@ -1,0 +1,19 @@
+// Linear search (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/igcse-computer-science-0478/algorithm-design-and-problem-solving/
+
+DECLARE Names : ARRAY[1:50] OF STRING
+INPUT SearchName
+Found <- FALSE
+Index <- 1
+WHILE Index <= 50 AND Found = FALSE DO
+   IF Names[Index] = SearchName
+      THEN
+         Found <- TRUE
+         OUTPUT "Found at position ", Index
+   ENDIF
+   Index <- Index + 1
+ENDWHILE
+IF Found = FALSE
+   THEN
+      OUTPUT "Not found"
+ENDIF

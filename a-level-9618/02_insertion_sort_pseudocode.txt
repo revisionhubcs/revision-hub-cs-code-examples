@@ -1,0 +1,12 @@
+// Insertion sort (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/algorithm-design-9618/
+
+FOR Pointer <- 2 TO NumberOfItems
+   ItemToInsert <- List[Pointer]
+   CurrentItem <- Pointer - 1
+   WHILE CurrentItem > 0 AND List[CurrentItem] > ItemToInsert
+      List[CurrentItem + 1] <- List[CurrentItem]
+      CurrentItem <- CurrentItem - 1
+   ENDWHILE
+   List[CurrentItem + 1] <- ItemToInsert
+NEXT Pointer

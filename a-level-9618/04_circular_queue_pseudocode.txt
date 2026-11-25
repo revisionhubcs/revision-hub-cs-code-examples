@@ -1,0 +1,17 @@
+// Circular queue (FIFO) (Cambridge-style pseudocode)
+// Notes and practice: https://revisionhub.online/a-level-computer-science-9618/data-types-and-structures/
+
+PROCEDURE Enqueue(Item : INTEGER)
+   IF NumberInQueue = MaxSize
+      THEN
+         OUTPUT "Queue full"
+      ELSE
+         RearPointer <- RearPointer + 1
+         IF RearPointer > MaxSize
+            THEN
+               RearPointer <- 1
+         ENDIF
+         Queue[RearPointer] <- Item
+         NumberInQueue <- NumberInQueue + 1
+   ENDIF
+ENDPROCEDURE
